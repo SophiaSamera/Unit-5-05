@@ -7,12 +7,20 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <b id="question">Find the area of this square by inserting the formula in the box below.</b>
+    <b id="question">Find the area of this square by inserting the width and height in the boxes below.</b>
     <br>
     <img src="area.jpg" alt="area" width="40%">
     <br>
-    <input type="text" id="input">
-    <button id="button">Answer?</button>
+    <b>Width</b>
+    <b>Height</b>
+    <br>
+    <input type="Text" id="width" size="1">
+    <input type="Text" id="height" size="1">
+    <br>
+    <br>
+    <input type="Text" id="area" size="4">
+    <br>
+    <button id="button" size="4" onclick="calculateArea()">Calculate</button>
     <script src="script.js"></script>
   </body>
 </html>

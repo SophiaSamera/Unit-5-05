@@ -1,13 +1,11 @@
 let number = 0
 
-document.getElementById('button').addEventListener('click', addition)
+document.getElementById('button').addEventListener('click', calculateArea)
 
-function addition () {
-  number = document.getElementById('input').value
+function calculateArea() {
+  var width = document.getElementById("width").value
+  var height = document.getElementById("height").value
+  var area = width * height
+  document.getElementById("area").value = area
 
-  number = parseInt(number)
-
-  number = number * 7
-
-  alert(number)
 }
